@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="91765"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 06:50:23 PM"/>
+        <attribute name="created" value="OTE3NjU7UFJFTTsyMDIyLTEwLTI4OzA4OjU2OjMzIEFNOzE4NDc="/>
+        <attribute name="edited" value="OTE3NjU7UFJFTTsyMDIyLTEwLTI5OzA2OjUwOjIzIFBNOzQ7MTk2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring variables for student informaation"/>
+            <declare name="rollno" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter your rollno&quot;" newline="True"/>
+            <input variable="rollno"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;enter your name &quot;" newline="True"/>
+            <input variable="name"/>
+            <declare name="address" type="String" array="False" size=""/>
+            <output expression="&quot;enter your address&quot;" newline="True"/>
+            <input variable="address"/>
+            <declare name="bloodgroup" type="String" array="False" size=""/>
+            <output expression="&quot;enter your blood group&quot;" newline="True"/>
+            <input variable="bloodgroup"/>
+            <declare name="phonenumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter your phone number&quot;" newline="True"/>
+            <input variable="phonenumber"/>
+            <declare name="departmentassigned" type="String" array="False" size=""/>
+            <output expression="&quot;enter the department you assigned&quot;" newline="True"/>
+            <input variable="departmentassigned"/>
+            <comment text="gathering basic information"/>
+            <declare name="whichsemester" type="String" array="False" size=""/>
+            <output expression="&quot;enter which semester are you in&quot;" newline="True"/>
+            <input variable="whichsemester"/>
+            <declare name="subjectcode" type="Integer" array="False" size=""/>
+            <output expression="&quot;subject code&quot;" newline="True"/>
+            <input variable="subjectcode"/>
+            <declare name="noofsubjects" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the no of subjects&quot;" newline="True"/>
+            <input variable="noofsubjects"/>
+            <declare name="subject1" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter your marks in subjet1&quot;" newline="True"/>
+            <input variable="subject1"/>
+            <declare name="subject2" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the marks in subject2&quot;" newline="True"/>
+            <input variable="subject2"/>
+            <declare name="subject3" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the marks in the subject3&quot;" newline="True"/>
+            <input variable="subject3"/>
+            <declare name="totalmarks" type="Integer" array="False" size=""/>
+            <assign variable="totalmarks" expression="subject1+subject2+subject3"/>
+            <output expression="&quot;the total marks are&quot; &amp;totalmarks" newline="True"/>
+            <comment text="calculation for average and total marks"/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <assign variable="average" expression="(subject1+subject2+subject3)/3"/>
+            <output expression="&quot;average is&quot;&amp;average" newline="True"/>
+            <comment text="final output"/>
+        </body>
+    </function>
+</flowgorithm>
