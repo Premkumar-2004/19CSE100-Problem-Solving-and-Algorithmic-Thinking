@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22014"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:07:57 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTExLTA0OzA5OjE4OjE0IEFNOzMwNTY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTExLTA0OzExOjA3OjU3IEFNOzI7MzE2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c, f" type="Real" array="False" size=""/>
+            <comment text="celsius to fahrenhiet converter "/>
+            <output expression="&quot;celsius to fahrenheit converter &quot;" newline="True"/>
+            <output expression="&quot; enter the value of celsius &quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="f" expression="1.8*c+32"/>
+            <output expression="&quot; the value of &quot;&amp;c&amp;&quot;celsius is&quot;&amp;f&amp;&quot;fahrenheit&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
