@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22014"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:43:31 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTExLTA0OzA5OjE2OjMwIEFNOzMwNTI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTExLTA0OzEwOjQzOjMxIEFNOzM7MzE1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to find the rermainder of two number without modulus function"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the values of a and b&quot;" newline="True"/>
+            <comment text="a is dividend and b is divisor"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <comment text="q is quotient"/>
+            <declare name="q" type="Integer" array="False" size=""/>
+            <assign variable="q" expression="a/b"/>
+            <declare name="rem" type="Integer" array="False" size=""/>
+            <comment text="rem is the reminder "/>
+            <assign variable="rem" expression="a-(b*q)"/>
+            <output expression="&quot; the reminder  is &quot;&amp;rem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
