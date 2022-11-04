@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22014"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 09:48:07 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTExLTA0OzA5OjI4OjM1IEFNOzMwNjA="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTExLTA0OzA5OjQ4OjA3IEFNOzI7MzE3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="this programme is for finding solutions of quadratic equation"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <comment text="enter the coefficents of  x^2,x,constant "/>
+            <output expression="&quot;enter the value of a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;enter the value of b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;ente the value of c&quot;" newline="True"/>
+            <input variable="c"/>
+            <comment text="solution 1"/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <assign variable="x1" expression="(-b+sqrt(b^2-4*a*c))/2*a"/>
+            <comment text="solution 2"/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <assign variable="x2" expression="(-b- sqrt(b^2-4*a*c))/2*a"/>
+            <output expression="&quot;the first root is&quot;&amp;x1" newline="True"/>
+            <output expression="&quot;the second root is&quot;&amp;x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
