@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22014"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 10:55:28 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTExLTE4OzA5OjEwOjU4IEFNOzMwNjE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTExLTE4OzEwOjU1OjI4IEFNOzM7MzE2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="atm interface"/>
+            <declare name="name" type="String" array="False" size=""/>
+            <comment text="declaring the variables "/>
+            <declare name="pin" type="Integer" array="False" size=""/>
+            <declare name="enteredpin" type="Integer" array="False" size=""/>
+            <declare name="amountcoustmer" type="Integer" array="False" size=""/>
+            <declare name="balance" type="Integer" array="False" size=""/>
+            <declare name="accountnumber" type="Integer" array="False" size=""/>
+            <declare name="enteredaccountnumber" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter your name &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;enter your account number &quot;" newline="True"/>
+            <assign variable="accountnumber" expression="9848287527"/>
+            <input variable="enteredaccountnumber"/>
+            <if expression="accountnumber=enteredaccountnumber">
+                <then>
+                    <output expression="&quot;enter the amount you want&quot;" newline="True"/>
+                    <input variable="amountcoustmer"/>
+                    <if expression="amountcoustmer&gt;500">
+                        <then>
+                            <output expression="&quot;enter your pin&quot;" newline="True"/>
+                            <assign variable="pin" expression="5885"/>
+                            <input variable="enteredpin"/>
+                            <if expression="pin=enteredpin">
+                                <then>
+                                    <output expression="&quot;you can collect your money&quot;" newline="True"/>
+                                    <output expression="&quot;your account balance  is 4400&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;you cant take amount less than 500&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;account number is wrong&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
