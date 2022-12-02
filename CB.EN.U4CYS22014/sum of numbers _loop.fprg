@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22014"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:58:58 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTEyLTAyOzA5OjA4OjE1IEFNOzMzMTE="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTEyLTAyOzA5OjU4OjU4IEFNOzM7MzQzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaration of variables "/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <comment text="if c is less than or equal to 100 loop runs"/>
+            <while expression="c&lt;=100">
+                <assign variable="b" expression="b+1"/>
+                <comment text="value of b in loop for every iteration"/>
+                <output expression="&quot;b&quot;&amp;b" newline="True"/>
+                <assign variable="sum" expression="sum+b"/>
+                <comment text="value of sum in every iteration"/>
+                <output expression="&quot;sum&quot;&amp;sum" newline="True"/>
+                <assign variable="c" expression="c+1"/>
+            </while>
+            <comment text="sum of the n numbers is"/>
+            <output expression="&quot;output sum of the numbers is&quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

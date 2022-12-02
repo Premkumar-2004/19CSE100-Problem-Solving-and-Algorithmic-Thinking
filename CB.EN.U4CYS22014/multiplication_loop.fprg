@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22014"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:36:17 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTEyLTAyOzA5OjU5OjAwIEFNOzMzMTE="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTEyLTAyOzEwOjM2OjE3IEFNOzU7MzQxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="program to multiplication table 1 to 10"/>
+            <comment text="declaring the variables "/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="1"/>
+            <comment text="assigning the value of b"/>
+            <while expression="b&lt;=10">
+                <output expression="&quot;the multiplication of&quot;&amp;b" newline="True"/>
+                <for variable="a" start="1" end="10" direction="inc" step="1">
+                    <assign variable="n" expression="b*a"/>
+                    <output expression="a&amp;&quot;*&quot;&amp;b&amp;&quot;=&quot;&amp;n" newline="True"/>
+                </for>
+                <assign variable="b" expression="b+1"/>
+                <comment text="adding b by plus 1"/>
+            </while>
+            <comment text="end"/>
+        </body>
+    </function>
+</flowgorithm>

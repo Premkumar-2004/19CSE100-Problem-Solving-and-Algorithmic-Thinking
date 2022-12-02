@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22014"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:46:02 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTEyLTAyOzA5OjM1OjAzIEFNOzMzMDg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAxNDsyMDIyMjNNQVlDMDA1MTsyMDIyLTEyLTAyOzA5OjQ2OjAyIEFNOzM7MzQxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring variables num ,fact,c"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="fact" type="Integer" array="False" size=""/>
+            <comment text="enter the desired number you want to do factorial"/>
+            <output expression="&quot;enter the number you want to do factorial&quot;" newline="True"/>
+            <input variable="num"/>
+            <comment text="num==0 factorial is 1"/>
+            <if expression="num==0">
+                <then>
+                    <output expression="&quot;factorial is 1&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="fact" expression="1"/>
+                    <for variable="c" start="1" end="num" direction="inc" step="1">
+                        <assign variable="fact" expression="fact*c"/>
+                    </for>
+                    <comment text="the factorial of number is "/>
+                    <output expression="&quot;output&quot;&amp;fact" newline="True"/>
+                </else>
+            </if>
+            <comment text="end"/>
+        </body>
+    </function>
+</flowgorithm>
